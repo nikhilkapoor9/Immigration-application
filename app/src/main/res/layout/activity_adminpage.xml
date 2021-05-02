@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Adminpage">
+
+<include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar"></include>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ieltsbackground"
+        android:alpha="0.6"></ImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addTeacher"
+            android:text="Add Teacher"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+
+            ></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addStudent"
+            android:text="Add Student"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+
+            ></Button>
+
+    </LinearLayout>
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/border">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addReading"
+            android:text="ADD READING MODULES"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+            ></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addWriting"
+            android:text="ADD WRITING MODULES"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+
+            ></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addlistening"
+            android:text="ADD LISTENING MODULES"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+
+            ></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addSpeaking"
+            android:text="ADD SPEAKING MODULES"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="150dp"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+
+            ></Button>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
