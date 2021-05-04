@@ -11,52 +11,25 @@
     <include layout="@layout/activity_add_details"
         android:id="@+id/detailsLayout"/>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/loginAccessButton"
+           android:text="grant login access"
+           android:layout_marginTop="300dp"></Button>
 
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/feesText"
-            android:text="Pay Fees"
-            android:textSize="35dp"
-            android:layout_marginTop="300dp"
-            ></TextView>
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/feesValue"
-            android:inputType="number"
-            android:layout_marginTop="300dp"
-            android:layout_marginLeft="20dp"
-            android:layout_toRightOf="@+id/feesText"
-            android:hint="enter the student id here"></EditText>
+       <Spinner
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:entries="@array/LoginAccess"
+           android:layout_toRightOf="@+id/loginAccessButton"
+           android:layout_marginTop="300dp"
+           ></Spinner>
+   </RelativeLayout>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/payFeesButton"
-            android:layout_below="@+id/feesText"
-            android:text="PAY FEES"></Button>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/loginAcces"
-            android:text="Grant Login Access"
-            android:layout_below="@+id/payFeesButton"></Button>
-
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-           android:layout_toRightOf="@+id/loginAcces"
-            android:layout_below="@+id/feesValue"
-            android:entries="@array/LoginAccess"
-            android:layout_marginTop="55dp"></Spinner>
-
-    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
